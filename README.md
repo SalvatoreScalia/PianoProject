@@ -30,7 +30,7 @@ Role of each of the Arduinos:
     - Reset button
     
 Required Arduino Libraries:
-  - ShiftPWM (Pro Micro)
+  - ShiftPWM (Pro Micro) (https://timodenk.com/blog/shiftregister-pwm-library/)(https://github.com/elcojacobs/ShiftPWM)
   - MIDIUSB  (Pro Micro & Control Box)
   - LiquidCrystal_I2C (Control Box)
   - Arduino Core for ESP32 (https://github.com/espressif/arduino-esp32)
