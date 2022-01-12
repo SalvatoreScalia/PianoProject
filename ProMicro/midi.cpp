@@ -38,7 +38,7 @@ void decodeMidi(uint8_t header, uint8_t byte1, uint8_t byte2, uint8_t byte3)
 
 	const uint8_t NOTE_ON_HEADER        = 9;
 	const uint8_t NOTE_OFF_HEADER       = 8;
-	const uint8_t CONTROL_CHANGE_HEADER = 8;
+	const uint8_t CONTROL_CHANGE_HEADER = 11;
 	const uint8_t SUSTAIN_STATUS_BYTE   = 176;
 	const uint8_t MIN_NOTE_PITCH        = 21;
 	const uint8_t MAX_NOTE_PITCH        = 108;
@@ -59,7 +59,7 @@ void decodeMidi(uint8_t header, uint8_t byte1, uint8_t byte2, uint8_t byte3)
 			activateNote(note, 0);
 		}
 		break;
-	case SUSTAIN_STATUS_BYTE:
+	case CONTROL_CHANGE_HEADER:
 		if(byte1 == SUSTAIN_STATUS_BYTE)
 		{
 			extern const uint8_t SUSTAIN_HEADER;
