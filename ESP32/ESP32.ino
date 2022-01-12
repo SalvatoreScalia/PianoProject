@@ -12,7 +12,9 @@
 #include "bluetooth.h"
 #include "main.h"
 #pragma GCC diagnostic pop
+#define LED_BUILTIN 2
 const bool DEBUG_MODE = false;
+
 
 void resetAll()
 {
